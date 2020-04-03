@@ -1,0 +1,21 @@
+.brand {
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+a {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  text-decoration: none !important;
+  color: white;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+a i {
+  margin-right: 1rem;
+}
