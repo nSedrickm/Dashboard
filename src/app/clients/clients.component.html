@@ -9,11 +9,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
+      <tr *ngFor="let client of clients">
+        <th scope="row">{{ client.__ID__ }}</th>
+        <td>{{ client.__TOKEN__ }}</td>
+        <td>{{ client.__DATE__}}</td>
       </tr>
     </tbody>
   </table>
   </div>
+
+

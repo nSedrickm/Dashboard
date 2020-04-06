@@ -2,6 +2,12 @@ const express =  require("express");
 const bodyParser = require("body-parser");
 
 const app = express();
+// fixes cors issues
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 //parse requests of content-type: applications/json
 app.use(bodyParser.json());
@@ -9,7 +15,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true }));
 
 app.get ("/" , (req, res) => {
-  res.json({message: "backend is running"});
+  res.json({message: "app-be is running"});
 });
 
 require("./app-be/routes/clients.routes")(app);

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from '../database.service';
 
 @Component({
   selector: 'app-clients',
@@ -7,9 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientsComponent implements OnInit {
 
-  constructor() { }
+  clients: any;
+
+  constructor(private databaseService: DatabaseService) { }
 
   ngOnInit() {
+    this.fetchClients();
+  }
+
+  fetchClients() {
+    this.databaseService.getAll()
+      .subscribe(
+        data => {
+          this.clients = data;
+          console.log(data);
+        },
+        error => {
+          console.log(error);
+        });
   }
 
 }
