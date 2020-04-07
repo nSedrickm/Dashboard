@@ -12,13 +12,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>easd112f</td>
-      <td>Mooc medic</td>
-      <td>67xxxxxx</td>
-      <td>04-04-2020</td>
-      <td>pending</td>
+    <tr *ngFor="let request of requests">
+      <th scope="row"> {{ request.__ID__}} </th>
+      <td>{{ request.REQ_ID}}</td>
+      <td>{{ request.__MESSAGE__ }}</td>
+      <td>{{ request.__PHONENUMBER__}}</td>
+      <td>{{ request.__DATE__ }}</td>
+      <td>{{ request.__STATUS__ }}</td>
     </tr>
   </tbody>
 </table>

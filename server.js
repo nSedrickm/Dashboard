@@ -18,7 +18,7 @@ app.get ("/" , (req, res) => {
   res.json({message: "app-be is running"});
 });
 
-require("./app-be/routes/clients.routes")(app);
+require("./app-be/routes/routes")(app);
 
 app.listen(3000, () => {
   console.log("server : runnning on port 3000");

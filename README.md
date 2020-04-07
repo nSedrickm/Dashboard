@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Backend Server
 
-Run `node server.js`. Navigatet to `http://localhost:3000`.
+Run `node server.js`. Navigate to `http://localhost:3000`.
 
 endpoints:
 

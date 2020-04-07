@@ -17,7 +17,7 @@ export class ClientsComponent implements OnInit {
   }
 
   fetchClients() {
-    this.databaseService.getAll()
+    this.databaseService.getAllClients()
       .subscribe(
         data => {
           this.clients = data;

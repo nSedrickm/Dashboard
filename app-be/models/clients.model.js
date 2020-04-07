@@ -2,9 +2,9 @@ const sql = require("./db.js");
 
 //constructor
 const clients = function (client) {
-  this.ID = client.ID,
-  this.TOKEN = client.TOKEN,
-  this.DATE  = client.DATE
+  this.id = client.ID,
+  this.token = client.TOKEN,
+  this.date  = client.DATE
 }
 
 clients.getAll = result => {
