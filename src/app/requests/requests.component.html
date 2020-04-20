@@ -1,25 +1,28 @@
 <div class="container p-5">
-<h2>Requests</h2>
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">REQ_ID</th>
-      <th scope="col">MESSAGE</th>
-      <th scope="col">PHONENUMBER</th>
-      <th scope="col">DATE</th>
-      <th scope="col">STATUS</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let request of requests">
-      <th scope="row"> {{ request.__ID__}} </th>
-      <td>{{ request.REQ_ID}}</td>
-      <td>{{ request.__MESSAGE__ }}</td>
-      <td>{{ request.__PHONENUMBER__}}</td>
-      <td>{{ request.__DATE__ }}</td>
-      <td>{{ request.__STATUS__ }}</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+  <h2 class="mb-5">Requests</h2>
+
+  <div class="row">
+    <div class="col-md-6" *ngFor="let request of requests">
+      <div class="card shadow">
+        <div class="card-header">
+          Request
+        </div>
+        <div class="card-body">
+          <dl class="row">
+            <dt class="col-4">ID</dt>
+            <dd class="col-8">{{ request.__ID__ }}</dd>
+            <dt class="col-4">REQ_ID</dt>
+            <dd class="col-8">{{ request.REQ_ID}}</dd>
+            <dt class="col-4">MESSAGE</dt>
+            <dd class="col-8">{{ request.__MESSAGE__ }}</dd>
+            <dt class="col-4">PHONENUMBER</dt>
+            <dd class="col-8">{{ request.__PHONENUMBER__}}</dd>
+            <dt class="col-4">DATE</dt>
+            <dd class="col-8">{{ request.__DATE__ }}</dd>
+            <dt class="col-4">STATUS</dt>
+            <dd class="col-8">{{ request.__STATUS__ }}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
