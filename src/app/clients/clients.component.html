@@ -1,21 +1,21 @@
 <div class="container p-5">
-  <h2>Clients</h2>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Token</th>
-        <th scope="col">Date</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let client of clients">
-        <th scope="row">{{ client.__ID__ }}</th>
-        <td>{{ client.__TOKEN__ }}</td>
-        <td>{{ client.__DATE__}}</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
+  <h2 class="mb-5">Clients</h2>
 
-
+  <div class="row">
+    <div class="col-md-4" *ngFor="let client of clients">
+      <div class="card">
+        <div class="card-header">
+          Featured
+        </div>
+        <div class="card-body">
+          <dl class="row">
+            <dt class="col-3">ID</dt>
+            <dd class="col-9">{{ client.__ID__ }}</dd>
+            <dt class="col-3">Token</dt>
+            <dd class="col-9"> {{ client.__TOKEN__ }}</dd>
+            <dt class="col-3">Date</dt>
+            <dd class="col-9">{{ client.__DATE__}}</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
