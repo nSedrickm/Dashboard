@@ -6,10 +6,16 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://unpkg.com/sleek-dashboard/dist/assets/css/sleek.min.css" rel="stylesheet">
+  <script src="node_modules/sleek-dashboard/dist/assets/plugins/nprogress/nprogress.js"></script>
 </head>
-<body>
+<body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+
+  <script>
+    NProgress.configure({ showSpinner: false });
+    NProgress.start();
+  </script>
+
+  <div id="toaster"></div>
   <app-root></app-root>
-  <script src="https://unpkg.com/sleek-dashboard/dist/assets/js/sleek.bundle.js"></script>
 </body>
 </html>

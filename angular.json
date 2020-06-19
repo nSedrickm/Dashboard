@@ -19,18 +19,35 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": false,
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css",
               "node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css",
               "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-regular.css",
               "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-brands.css",
-              "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css"
+              "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css",
+              "node_modules/sleek-dashboard/dist/assets/plugins/nprogress/nprogress.css",
+              "node_modules/sleek-dashboard/dist/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.css",
+              "node_modules/sleek-dashboard/dist/assets/plugins/daterangepicker/daterangepicker.css",
+              "node_modules/sleek-dashboard/dist/assets/plugins/toastr/toastr.min.css",
+              "node_modules/sleek-dashboard/dist/assets/css/sleek.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/sleek-dashboard/dist/assets/plugins/slimscrollbar/jquery.slimscroll.min.js",
+              "node_modules/sleek-dashboard/dist/assets/plugins/jekyll-search.min.js",
+              "node_modules/sleek-dashboard/dist/assets/plugins/charts/Chart.min.js",
+              "node_modules/sleek-dashboard/dist/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.js",
+              "node_modules/sleek-dashboard/dist/assets/plugins/jvectormap/jquery-jvectormap-world-mill.js",
+              "node_modules/sleek-dashboard/dist/assets/plugins/daterangepicker/moment.min.js",
+              "node_modules/sleek-dashboard/dist/assets/plugins/daterangepicker/daterangepicker.js",
+              "node_modules/sleek-dashboard/dist/assets/plugins/toastr/toastr.min.js",
+              "node_modules/sleek-dashboard/dist/assets/js/sleek.bundle.js"
             ]
           },
           "configurations": {
@@ -89,7 +106,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
@@ -108,7 +128,9 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
