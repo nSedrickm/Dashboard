@@ -21,7 +21,17 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/sleek-dashboard/dist/assets/img",
+                "output": "assets/img"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/sleek-dashboard/dist/assets/data",
+                "output": "assets/data"
+              }
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -48,6 +58,7 @@
               "node_modules/sleek-dashboard/dist/assets/plugins/daterangepicker/moment.min.js",
               "node_modules/sleek-dashboard/dist/assets/plugins/daterangepicker/daterangepicker.js",
               "node_modules/sleek-dashboard/dist/assets/plugins/toastr/toastr.min.js",
+              "node_modules/sleek-dashboard/dist/assets/app/app.calendar.js",
               "node_modules/sleek-dashboard/dist/assets/js/sleek.bundle.js"
             ]
           },
