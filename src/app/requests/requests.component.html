@@ -1,11 +1,11 @@
-<div class="container p-5">
-  <h2 class="mb-5">Requests</h2>
+
+  <h3 class="mb-4">Requests</h3>
 
   <div class="row">
     <div class="col-md-6" *ngFor="let request of requests">
       <div class="card shadow">
-        <div class="card-header">
-          Request
+        <div class="card-header bg-danger text-light">
+          Outbound - SMS
         </div>
         <div class="card-body">
           <dl class="row">
@@ -20,9 +20,8 @@
             <dt class="col-4">DATE</dt>
             <dd class="col-8">{{ request.__DATE__ }}</dd>
             <dt class="col-4">STATUS</dt>
-            <dd class="col-8">{{ request.__STATUS__ }}</dd>
+            <dd class="col-8"> <span class="badge badge-danger">{{ request.__STATUS__ }}</span></dd>
           </dl>
         </div>
       </div>
     </div>
-  </div>
