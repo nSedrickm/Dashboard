@@ -10,6 +10,7 @@ import { PanelComponent } from './panel/panel.component';
 import { RequestsComponent } from './requests/requests.component';
 import { ClientsComponent } from './clients/clients.component';
 import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { RightSidebarComponent } from './right-sidebar/right-sidebar.component';
     PanelComponent,
     RequestsComponent,
     ClientsComponent,
-    RightSidebarComponent
+    RightSidebarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
